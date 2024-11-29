@@ -139,6 +139,8 @@ public class SwiftImageGallerySaverPlugin: NSObject, FlutterPlugin {
                                 self.saveResult(isSuccess: true, filePath: urlStr)
                             }
                         }
+                    } else {
+                      self.saveResult(isSuccess: true, filePath: nil)
                     }
                 } else {
                     self.saveResult(isSuccess: false, error: self.errorMessage)
